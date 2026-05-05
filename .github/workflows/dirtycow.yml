@@ -22,9 +22,11 @@ jobs:
          sudo apt -y install wget
           echo "ANDROID_NDK_HOME: $ANDROID_NDK_HOME"
           ls -la $ANDROID_NDK_HOME
-          wget -P $ANDROID_NDK_HOME 
-          wget -P $ANDROID_NDK_HOME 
-          wget -P $ANDROID_NDK_HOME 
+          wget -P $ANDROID_NDK_HOME https://github.com/resparkstar/dirtycow-android-poc/blob/master/dirtycow.c
+          wget -P $ANDROID_NDK_HOME https://github.com/resparkstar/dirtycow-android-poc/blob/master/dcow.c
+          wget -P $ANDROID_NDK_HOME https://github.com/resparkstar/dirtycow-android-poc/blob/master/run-as.c       
+          wget -P $ANDROID_NDK_HOME https://github.com/resparkstar/dirtycow-android-poc/blob/master/Android.mk
+          wget -P $ANDROID_NDK_HOME https://github.com/resparkstar/dirtycow-android-poc/blob/master/Application.mk
           cd  $ANDROID_NDK_HOME
           ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.mk APP_ABI=armeabi-v7a APP_PLATFORM=android-22
           ls 
