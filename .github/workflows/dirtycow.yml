@@ -28,7 +28,7 @@ jobs:
           wget -P $ANDROID_NDK_HOME https://github.com/resparkstar/dirtycow-android-poc/blob/master/Android.mk
           wget -P $ANDROID_NDK_HOME https://github.com/resparkstar/dirtycow-android-poc/blob/master/Application.mk
           cd  $ANDROID_NDK_HOME
-          ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.mk APP_PLATFORM=android-16
+          ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.mk APP_PLATFORM=android-21
           ls 
           
           
