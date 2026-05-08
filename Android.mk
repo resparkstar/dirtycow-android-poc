@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
 dirtycow.c \
-dcow.c
+  dcow.c
 
 LOCAL_MODULE := dirtycow
 LOCAL_LDFLAGS   += -llog
